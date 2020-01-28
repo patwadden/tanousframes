@@ -1,0 +1,82 @@
+---
+layout: default
+permalink: /contact/
+---
+
+{% include navigation.html active="contact" %}
+
+<div class="container mx-auto mt-32 mb-48">
+	<div class="flex flex-wrap -mx-2 overflow-hidden">
+		<div class="my-2 px-2 w-7/12 overflow-hidden">
+			<img class="max-w-full h-auto" src="https://source.unsplash.com/random/800x800" alt="" />
+		</div>
+		<div class="w-1/12"></div>
+		<div class="flex flex-col my-2 px-2 w-3/12 overflow-hidden">
+			<div>
+				<h1 class="font-serif text-5xl">Contact Us</h1>
+			</div>
+			<form>
+				<div class="mb-4">
+					<label class="font-sans font-semibold mb-1 inline-block">Your Name</label>
+					<input
+						type="text"
+						name="name"
+						class="border-dark border border-solid block placeholder-dark font-sans w-full py-2 px-3 mb-4"
+						placeholder="Jane Doe"
+					/>
+				</div>
+				<div class="mb-4">
+					<label class="font-sans font-semibold mb-1 inline-block">Your Email Address</label>
+					<input
+						type="email"
+						name="email"
+						class="border-dark border border-solid block placeholder-dark font-sans w-full py-2 px-3 mb-4"
+						placeholder="jane.doe@example.net"
+					/>
+				</div>
+				<div class="mb-2">
+					<label class="font-sans font-semibold mb-1 inline-block">Your Message</label>
+					<textarea
+						name="message"
+						class="border-dark border border-solid block placeholder-dark font-sans w-full py-2 px-3"
+						rows="5"
+						placeholder="Jane Doe"
+					>
+					</textarea>
+				</div>
+				<button
+					class="float-right inline-block mt-5 bg-light hover:bg-dark text-black py-3 px-12 font-sans transition w-full"
+				>
+					Send
+				</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="container mx-auto mt-32 mb-48">
+	<div class="flex flex-wrap -mx-2 overflow-hidden">
+		<div class="my-2 px-2 w-2/12">
+			<p class="mb-2 font-sans">Tel: +44 7709348427</p>
+			<p class="mb-2 font-sans">
+				Email: <a class="hover:underline" href="mailto:test@test.com">test@test.com</a>
+			</p>
+			<p class="mb-2 font-sans">
+				105/2a Rowntree Street<br />
+				Balaim<br />
+				Sydney<br />
+				NSW<br />
+				2041
+			</p>
+		</div>
+		<div class="my-2 px-2 w-10/12">
+			<div class="relative block w-full p-0 overflow-hidden embed">
+				<iframe
+					class="absolute top-0 bottom-0 left-0 w-full h-full border-0 "
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.4292737191704!2d-0.19866468402589235!3d51.48698952001609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f8e514ff8b9%3A0xdf54631983d02848!2stanous%20fine%20art%20frames%20limited!5e0!3m2!1sen!2sau!4v1579759322159!5m2!1sen!2sau"
+					allowfullscreen
+				></iframe>
+			</div>
+		</div>
+	</div>
+</div>

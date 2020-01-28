@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% include navigation.html active="our-frames" %}
+
+<div class="bg-no-repeat bg-right-bottom"
+	style="background-image: url('/css/images/our-frames.png');">
+	<div class="flex flex-wrap overflow-hidden container mx-auto xl:py-48 lg:py-32 xl:p0 lg:px-5">
+		<div class="overflow-hidden w-2/5">
+			<h2 class="text-4xl font-serif">Family Owned and Run</h2>
+			<p class="font-sans font-light">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis
+				ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+				Pharetra Vestibulum Nibh Commodo Ullamcorper.
+			</p>
+		</div>
+	</div>
+</div>
+
+<nav id="frames" class="border-t border-dark">
+	<ul class="flex py-3 px-6">
+		<li class="mr-6">
+			<a class="uppercase hover:underline font-sans text-sm underline text-dark"
+				href="/our-frames">All</a>
+		</li>
+		<li class="mr-6">
+			<a class="uppercase hover:underline font-sans text-sm" href="/our-frames/antique-frames#frames">Antique Frames</a>
+		</li>
+		<li class="mr-6">
+			<a class="uppercase hover:underline font-sans text-sm" href="/our-frames/contemporary-frames#frames">Contemporary Frames</a>
+		</li>
+		<li class="mr-6">
+			<a class="uppercase hover:underline font-sans text-sm" href="/our-frames/frame-restorations#frames">Frame Restorations</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="flex flex-wrap">
+	{% assign framesInUse = "|" | split: "|" %}
+
+	{% for collection in page.frames %}
+		{% assign framesInUse = framesInUse | concat: site[collection] %}
+	{% endfor %}
+
+	{% for frame in framesInUse %}
+		{% include frame.html frame=frame %}
+	{% endfor %}
+</div>

@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+{% include navigation.html active="our-frames" %}
+
+{% assign collectionName = page.collection | replace: '_', ' ' | split: ' ' %}
+
+<div class="container mx-auto py-4 font-sans font-light text-sm">
+  <a href="/our-frames/" class="hover:underline">Our Frames</a> /
+  <a href="/our-frames/{{ page.collection | replace: '_', '-'}}/"
+    class="hover:underline">{% for word in collectionName %}{{ word |capitalize }}
+    {% endfor %}</a>
+  / {{ page.name }}
+</div>
+
+<div class="container mx-auto mt-32 mb-48">
+  <div class="flex flex-wrap -mx-2 overflow-hidden">
+    <div class="my-2 px-2 w-7/12 overflow-hidden">
+      <img class="max-w-full h-auto" src="{{ page.image_path }}" alt="" />
+    </div>
+    <div class="w-1/12"></div>
+    <div class="flex flex-col my-2 px-2 w-3/12 overflow-hidden text-center">
+      <div>
+        <h1 class="font-serif text-5xl">{{ page.name }}</h1>
+        {% for tag in page.tags %}
+        <div
+          class="bg-dark text-sm inline-block py-1 px-2 text-white font-sans rounded-sm font-semibold">
+          {{ tag.label }}
+        </div>
+        {% endfor %}
+        <p class="font-sans font-light mt-8">{{ page.description }}</p>
+      </div>
+      <div class="mt-auto text-right font-sans text-lg">
+        Ref {{ page.reference }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mx-auto pb-4 text-center font-serif font-light text-4xl">
+  Other {% for word in collectionName %}{{ word |capitalize }} {% endfor %}
+</div>
+
+<div class="flex flex-wrap">
+  {% for frame in site[page.collection] %}
+  {% if frame.name != page.name %}
+  {% include frame.html frame=frame %}
+  {% endif %}
+  {% endfor %}
+</div>
