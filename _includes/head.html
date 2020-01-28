@@ -4,11 +4,13 @@
   <meta name="viewport" content="width=device-width">
 
   <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  
+  <meta name="description"
+    content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/site.css">
-  
+
   {% if jekyll.environment == 'production' %}
-    {% include google-analytics.html %}
+  {% include google-analytics.html %}
   {% endif %}
 </head>

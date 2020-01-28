@@ -27,10 +27,6 @@ github_username: jekyll
 # Build settings
 markdown: kramdown
 
-plugins:
-  - jekyll-postcss
-  - jekyll-purgecss
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
