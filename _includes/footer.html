@@ -6,7 +6,7 @@
 				Tanous Fine Art Frames is a recognised member of the Fine Art Trade Guild.
 			</p>
 		</div>
-		<div class="ml-auto w-1/6 overflow-hidden font-sans text-white font-light text-right">{{ site.data.contact.address_text }}</div>
+		<div class="ml-auto w-1/6 overflow-hidden font-sans text-white font-light text-right">{{ site.data.contact.address_markdown | markdownify }}</div>
 		<div class="w-1/6 overflow-hidden font-sans text-white font-light text-right">
 			<a href="mailto:{{ site.data.contact.email }}" class="hover:underline">{{ site.data.contact.email }}</a><br />
 			{{ site.data.contact.phone }}

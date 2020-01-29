@@ -56,12 +56,12 @@ permalink: /contact/
 
 <div class="container mx-auto mt-32 mb-48">
 	<div class="flex flex-wrap -mx-2 overflow-hidden">
-		<div class="my-2 px-2 w-2/12">
-			<p class="mb-2 font-sans">Tel: {{ site.data.contact.phone }}</p>
-			<p class="mb-2 font-sans">
+		<div class="my-2 px-2 w-2/12 font-sans">
+			<p class="mb-2">Tel: {{ site.data.contact.phone }}</p>
+			<p class="mb-2">
 				Email: <a class="hover:underline" href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
 			</p>
-			<p class="mb-2 font-sans">{{ site.data.contact.address_text }}</p>
+			<p class="mb-2">{{ site.data.contact.address_markdown | markdownify }}</p>
 		</div>
 		<div class="my-2 px-2 w-10/12">
 			<div class="relative block w-full p-0 overflow-hidden embed">
