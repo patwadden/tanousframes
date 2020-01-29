@@ -10,10 +10,10 @@ image_path: https://source.unsplash.com/random/800x800
 reference: '#124'
 
 _options:
+  layout:
+    hidden: true
   image_path:
     width: 1000
     height: 1000
     resize_style: contain
 ---
-
-Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Donec sed odio dui.

@@ -42,10 +42,13 @@ markdown: kramdown
 collections:
   antique_frames:
     output: true
+    _hide_content: true
     permalink: /our-frames/antique-frames/:name/
   contemporary_frames:
     output: true
+    _hide_content: true
     permalink: /our-frames/contemporary-frames/:name/
   frame_restorations:
     output: true
+    _hide_content: true
     permalink: /our-frames/frame-restorations/:name/

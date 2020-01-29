@@ -8,6 +8,8 @@ image_path:
 reference: 
 
 _options:
+  layout:
+    hidden: true
   image_path:
     width: 1000
     height: 1000
