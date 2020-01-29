@@ -1,9 +1,18 @@
 ---
 layout: default
 permalink: /
+background_image_path: /uploads/home/hero.jpg
+
+_options:
+  layout:
+    hidden: true
+  permalink:
+    hidden: true
+  image_path:
+    uploads_dir: /uploads/home
 ---
 
-<div class="h-screen flex flex-col justify-center bg-cover bg-top bg-no-repeat" style="background-image: url('/css/images/hero.jpg')">
+<div class="h-screen flex flex-col justify-center bg-cover bg-top bg-no-repeat" style="background-image: url('{{ page.background_image_path }}')">
 	<div class="container mx-auto">
 		<div class="flex justify-center mb-8">
 			<img src="/css/images/logo.png" class="w-1/4 min-w-64" alt="" />

@@ -1,11 +1,20 @@
 ---
 layout: default
+background_image_path: /uploads/home/our-frames.png
+
+_options:
+  layout:
+    hidden: true
+  permalink:
+    hidden: true
+  background_image_path:
+    uploads_dir: /uploads/home
 ---
 
 {% include navigation.html active="our-frames" %}
 
 <div class="bg-no-repeat bg-right-bottom"
-	style="background-image: url('/css/images/our-frames.png');">
+	style="background-image: url('{{ page.background_image_path }}');">
 	<div class="flex flex-wrap overflow-hidden container mx-auto xl:py-48 lg:py-32 xl:p0 lg:px-5">
 		<div class="overflow-hidden w-2/5">
 			<h2 class="editable text-4xl font-serif">Our Frames</h2>
