@@ -14,4 +14,5 @@ _options:
     width: 1000
     height: 1000
     resize_style: contain
+    uploads_dir: uploads/antique
 ---
