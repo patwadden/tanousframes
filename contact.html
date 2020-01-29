@@ -57,17 +57,11 @@ permalink: /contact/
 <div class="container mx-auto mt-32 mb-48">
 	<div class="flex flex-wrap -mx-2 overflow-hidden">
 		<div class="my-2 px-2 w-2/12">
-			<p class="editable mb-2 font-sans">Tel: +44 7709348427</p>
-			<p class="editable mb-2 font-sans">
-				Email: <a class="hover:underline" href="mailto:test@test.com">test@test.com</a>
+			<p class="mb-2 font-sans">Tel: {{ site.data.contact.phone }}</p>
+			<p class="mb-2 font-sans">
+				Email: <a class="hover:underline" href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
 			</p>
-			<p class="editable mb-2 font-sans">
-				105/2a Rowntree Street<br />
-				Balaim<br />
-				Sydney<br />
-				NSW<br />
-				2041
-			</p>
+			<p class="mb-2 font-sans">{{ site.data.contact.address_text }}</p>
 		</div>
 		<div class="my-2 px-2 w-10/12">
 			<div class="relative block w-full p-0 overflow-hidden embed">
