@@ -1,29 +1,18 @@
-<nav class="bg-light py-2">
+<nav class="bg-light py-2 px-2 md:px-0">
   <div
-    class="flex flex-wrap overflow-hidden container mx-auto flex items-center justify-between flex-wrap  xl:p0 lg:px-5">
-    <a href="/" class="flex items-center flex-shrink-0 text-white mr-6">
-      <img src="/css/images/logo.png" class="w-24" alt="" />
+    class="flex flex-wrap overflow-hidden container mx-auto flex items-center justify-between flex-wrap xl:p0 lg:px-5">
+    <a href="/" class="flex items-center flex-shrink-0 text-white mr-4 md:mr-6">
+      <img src="/css/images/logo.png" class="w-20 md:w-24" alt="" />
     </a>
-    <div class="block lg:hidden">
-      <button class="flex items-center px-3 py-2 border rounded">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-        </svg>
-      </button>
-    </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-      <div class="text-sm lg:flex-grow">
-        <a href="/" class="uppercase block mt-4 lg:inline-block font-sans font-semibold hover:underline lg:mt-0
-        mr-4 {% if include.active == 'home' %}underline text-dark{% endif %}">
+    <div class="block flex-grow flex items-center w-auto">
+      <div class="text-sm flex-grow">
+        <a href="/" class="text-xs md:text-base uppercase inline-block font-sans font-semibold hover:underline mt-0 mr-2 md:mr-4 {% if include.active == 'home' %}underline text-dark{% endif %}">
           Home
         </a>
-        <a href="/our-frames/" class="uppercase block mt-4 lg:inline-block font-sans font-semibold hover:underline lg:mt-0
-        mr-4 {% if include.active == 'our-frames' %}underline text-dark{% endif %}">
+        <a href="/our-frames/" class="text-xs md:text-base uppercase inline-block font-sans font-semibold hover:underline mt-0 mr-2 md:mr-4 {% if include.active == 'our-frames' %}underline text-dark{% endif %}">
           Our Frames
         </a>
-        <a href="/contact/" class="uppercase block mt-4 lg:inline-block font-sans font-semibold hover:underline lg:mt-0
-        {% if include.active == 'contact' %}underline text-dark{% endif %}">
+        <a href="/contact/" class="text-xs md:text-base uppercase inline-block font-sans font-semibold hover:underline mt-0{% if include.active == 'contact' %}underline text-dark{% endif %}">
           Contact
         </a>
       </div>

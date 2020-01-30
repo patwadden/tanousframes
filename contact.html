@@ -5,15 +5,15 @@ permalink: /contact/
 
 {% include navigation.html active="contact" %}
 
-<div class="container mx-auto mt-32 mb-48">
-	<div class="flex flex-wrap -mx-2 overflow-hidden">
-		<div class="my-2 px-2 w-7/12 overflow-hidden">
+<div class="container mx-auto mt-0 mb-10 md:mt-16 md:mb-20 lg:mt-24 lg:mb-32 xl:mt-32 xl:mb-48">
+	<div class="flex flex-wrap overflow-hidden">
+		<div class="hidden md:block md:w-6/12 lg:w-6/12 xl:w-7/12 mb-4 md:my-2 px-2 overflow-hidden">
 			<img class="editable max-w-full h-auto" src="/uploads/home/contact.jpeg" alt="" />
 		</div>
-		<div class="w-1/12"></div>
-		<div class="flex flex-col my-2 px-2 w-3/12 overflow-hidden">
+		<div class="hidden lg:block md:w-1/12 xl:w-1/12"></div>
+		<div class="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 flex flex-col my-2 px-2 overflow-hidden">
 			<div>
-				<h1 class="font-serif text-5xl">Contact Us</h1>
+				<h1 class="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight mb-2 mt-4 md:mt-0">Contact Us</h1>
 			</div>
 			<form>
 				<div class="mb-4">
@@ -54,16 +54,16 @@ permalink: /contact/
 	</div>
 </div>
 
-<div class="container mx-auto mt-32 mb-48">
-	<div class="flex flex-wrap -mx-2 overflow-hidden">
-		<div class="my-2 px-2 w-2/12 font-sans">
-			<p class="mb-2">Tel: {{ site.data.contact.phone }}</p>
+<div class="container mx-auto mt-0 mb-10 md:mt-16 md:mb-20 lg:mt-24 lg:mb-32 xl:mt-32 xl:mb-48">
+	<div class="flex flex-wrap overflow-hidden">
+		<div class="my-2 px-2 w-full md:w-3/12 lg:w-2/12 font-sans">
+			<p class="mb-2">Tel: {{ site.data.contact.phone_markdown | markdownify }}</p>
 			<p class="mb-2">
 				Email: <a class="hover:underline" href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
 			</p>
 			<p class="mb-2">{{ site.data.contact.address_markdown | markdownify }}</p>
 		</div>
-		<div class="my-2 px-2 w-10/12">
+		<div class="my-2 px-2 w-full md:w-9/12 lg:w-10/12">
 			<div class="relative block w-full p-0 overflow-hidden embed">
 				<iframe
 					class="absolute top-0 bottom-0 left-0 w-full h-full border-0 "

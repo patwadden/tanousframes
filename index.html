@@ -15,7 +15,7 @@ _options:
 <div class="h-screen flex flex-col justify-center bg-cover bg-top bg-no-repeat" style="background-image: url('{{ page.background_image_path }}')">
 	<div class="container mx-auto">
 		<div class="flex justify-center mb-8">
-			<img src="/css/images/logo.png" class="w-1/4 min-w-64" alt="" />
+			<img src="/css/images/logo.png" class="w-2/3 lg:w-1/4 min-w-64" alt="" />
 		</div>
 		<nav class="flex justify-center">
 			<ul class="flex">
@@ -33,65 +33,66 @@ _options:
 </div>
 
 {% include navigation.html active="home" %}
-
-<div class="flex flex-wrap overflow-hidden container mx-auto my-40 xl:p0 lg:px-5">
-	<div class="w-1/2 my-2 px-2 overflow-hidden">
+ 
+<div class="flex flex-wrap overflow-hidden container mx-auto my-0 md:my-20 lg:my-32 xl:my-48">
+	<div class="w-full md:w-1/2 my-2 px-2 overflow-hidden">
 		<img class="editable max-w-full h-auto" src="/uploads/home/intro_large.jpeg" alt="" />
 	</div>
 
-	<div class="w-1/2 my-2 px-2">
-		<img class="editable border-solid border-8 border-white w-4/5 mt-10 -ml-40 xl:mb-5 lg:mb-1" src="/uploads/home/intro_small.jpeg" alt="" />
-		<h2 class="editable text-4xl font-serif">Family Owned and Run</h2>
-		<p class="editable font-sans font-light">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis
-			ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velitaliquet.
-			Pharetra Vestibulum Nibh Commodo Ullamcorper. Integer posuere erat a ante.
-		</p>
+	<div class="w-full md:w-1/2 my-2 px-2">
+		<img class="hidden md:block editable border-solid border-8 border-white w-4/5 mt-10 -ml-20 lg:-ml-40 xl:mb-5 md:mb-1" src="/uploads/home/intro_small.jpeg" alt="" />
+		<h2 class="editable text-3xl md:text-4xl lg:text-5xl leading-tight font-serif">Family Owned For Over a Century</h2>
+		<span class="editable font-sans font-light block">
+			<p>
+				The Tanous family have been in the framing business since 1905. We use the same skills and techniques that have been handed down in the family.
+			</p>
+			<p>
+				Over the past century, we have been commissioned by artists of the eminence of Jacob Epstein, Augustus John, Nadia Benois, Sir Alfred Munnings and Vivian Pitchforth.
+			</p>
+		</span>
 		{% include button.html href="#" label="Read Our Story" %}
 	</div>
 </div>
 
-<div class="flex flex-wrap flex-col overflow-hidden my-40 container mx-auto items-center">
-	<h2 class="text-4xl text-center font-serif">Our Frames</h2>
-	<p class="editable w-full md:w-4/5 lg:w-3/5 xl:w-2/5 mb-12 text-center font-sans font-light">
-		Curabitur blandit tempus porttitor. Donec sed odio dui. Integer posuere erat a ante venenatis
-		dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-		eget lacinia odio sem nec elit.
+<div class="flex flex-wrap flex-col overflow-hidden mt-40 mb-0 md:my-20 lg:my-32 xl:my-48 container mx-auto items-center">
+	<h2 class="text-3xl md:text-4xl lg:text-5xl leading-tight text-center font-serif">Our Frames</h2>
+	<p class="editable w-full md:w-4/5 lg:w-3/5 xl:w-2/5 px-2 md:px-0 mb-12 text-center font-sans font-light">
+		We make and restore traditional fine art frames using our unique collection of hand-carved, antique moulds. The Tanous family have been in the trade for over a century, and the team continue to use the same skills that have been handed down in the family for the last century.
 	</p>
 
 	<div class="flex flex-wrap flex-row overflow-hidden justify-center container mx-auto mb-5">
 		<button
 			data-target="antique"
-			class="toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark text-dark hover:text-white mx-4 uppercase font-sans"
+			class="text-sm md:text-base toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark text-dark hover:text-white mr-2 sm:mr-4 uppercase font-sans"
 		>Antique</button>
 		<button
 			data-target="contemporary"
-			class="toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark hover:text-white mx-4 uppercase font-sans"
+			class="text-sm md:text-base toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark hover:text-white mx-2 sm:mx-4 uppercase font-sans"
 		>Contemporary</button>
 		<button
 			data-target="restorations"
-			class="toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark hover:text-white mx-4 uppercase font-sans"
+			class="text-sm md:text-base toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark hover:text-white ml-2 sm:ml-4 uppercase font-sans"
 		>Restorations</button>
 	</div>
 
-	<div class="container mx-auto p-12 bg-light">
+	<div class="container mx-auto p-6 md:p-12 bg-light">
 		<div class="target" id="antique">
 			<div class="flex flex-wrap flex-row overflow-hidden">
-				<div class="my-px px-px w-1/3">
+				<div class="w-full sm:w-1/2 md:w-1/3 my-px px-px">
 					<img class="editable" src="/uploads/home/antique_one.jpeg" alt="" />
 				</div>
-				<div class="my-px px-px w-1/3">
+				<div class="hidden sm:block sm:w-1/2 md:w-1/3 my-px px-px ">
 					<img class="editable" src="/uploads/home/antique_two.jpeg" alt="" />
 				</div>
-				<div class="my-px px-px w-1/3">
+				<div class="hidden md:block my-px px-px w-1/3">
 					<img class="editable" src="/uploads/home/antique_three.jpeg" alt="" />
 				</div>
 			</div>
 
-			<div class="flex flex-wrap flex-row justify-center -mt-20">
+			<div class="flex flex-wrap flex-row justify-center lg:-mt-20">
 				<div
-					class="flex flex-wrap flex-row justify-center bg-white shadow-2xl p-10 xl:w-1/2 lg:w-2/3">
-					<h3 class="text-4xl mb-2 font-serif">Antique Frames</h3>
+					class="flex flex-wrap flex-row justify-center bg-white shadow-2xl p-4 md:p-10 xl:w-1/2 lg:w-2/3">
+					<h3 class="text-2xl md:text-3xl leading-tight mb-2 font-serif text-center">Antique Style Frames</h3>
 					<p class="editable text-center font-sans font-light">
 						Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
@@ -103,52 +104,52 @@ _options:
 
 		<div class="target hidden" id="contemporary">
 			<div class="flex flex-wrap flex-row overflow-hidden">
-				<div class="my-px px-px w-1/3">
+				<div class="w-full sm:w-1/2 md:w-1/3 my-px px-px">
 					<img class="editable" src="/uploads/home/contemporary_one.jpeg" alt="" />
 				</div>
-				<div class="my-px px-px w-1/3">
+				<div class="hidden sm:block sm:w-1/2 md:w-1/3 my-px px-px ">
 					<img class="editable" src="/uploads/home/contemporary_two.jpeg" alt="" />
 				</div>
-				<div class="my-px px-px w-1/3">
+				<div class="hidden md:block my-px px-px w-1/3">
 					<img class="editable" src="/uploads/home/contemporary_three.jpeg" alt="" />
 				</div>
 			</div>
-	
-			<div class="flex flex-wrap flex-row justify-center -mt-20">
+
+			<div class="flex flex-wrap flex-row justify-center lg:-mt-20">
 				<div
-					class="flex flex-wrap flex-row justify-center bg-white shadow-2xl p-10 xl:w-1/2 lg:w-2/3">
-					<h3 class="text-4xl mb-2 font-serif">Contemporary Frames</h3>
+					class="flex flex-wrap flex-row justify-center bg-white shadow-2xl p-4 md:p-10 xl:w-1/2 lg:w-2/3">
+					<h3 class="text-2xl md:text-3xl leading-tight mb-2 font-serif text-center">Contemporary Style Frames</h3>
 					<p class="editable text-center font-sans font-light">
-						Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+						Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. 
+						Sed posuere consectetur est at lobortis. Ornare Amet Cras Tristique Sollicitudin.
 					</p>
-					{% include button.html href="/our-frames/contemporary-frames" label="See More Frames" %}
+					{% include button.html href="/our-frames/antique-frames" label="See More Frames" %}
 				</div>
 			</div>
 		</div>
 
 		<div class="target hidden" id="restorations">
 			<div class="flex flex-wrap flex-row overflow-hidden">
-				<div class="my-px px-px w-1/3">
+				<div class="w-full sm:w-1/2 md:w-1/3 my-px px-px">
 					<img class="editable" src="/uploads/home/restoration_one.jpeg" alt="" />
 				</div>
-				<div class="my-px px-px w-1/3">
+				<div class="hidden sm:block sm:w-1/2 md:w-1/3 my-px px-px ">
 					<img class="editable" src="/uploads/home/restoration_two.jpeg" alt="" />
 				</div>
-				<div class="my-px px-px w-1/3">
+				<div class="hidden md:block my-px px-px w-1/3">
 					<img class="editable" src="/uploads/home/restoration_three.jpeg" alt="" />
 				</div>
 			</div>
-	
-			<div class="flex flex-wrap flex-row justify-center -mt-20">
+
+			<div class="flex flex-wrap flex-row justify-center lg:-mt-20">
 				<div
-					class="flex flex-wrap flex-row justify-center bg-white shadow-2xl p-10 xl:w-1/2 lg:w-2/3">
-					<h3 class="text-4xl mb-2 font-serif">Frame Restorations</h3>
+					class="flex flex-wrap flex-row justify-center bg-white shadow-2xl p-4 md:p-10 xl:w-1/2 lg:w-2/3">
+					<h3 class="text-2xl md:text-3xl leading-tight mb-2 font-serif text-center">Frame Restorations</h3>
 					<p class="editable text-center font-sans font-light">
-						Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+						Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+						Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
 					</p>
-					{% include button.html href="/our-frames/frame-restorations" label="See More Frames" %}
+					{% include button.html href="/our-frames/antique-frames" label="See More Frames" %}
 				</div>
 			</div>
 		</div>

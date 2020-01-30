@@ -1,6 +1,5 @@
 ---
 layout: default
-background_image_path: /uploads/home/our-frames.png
 
 _options:
   layout:
@@ -13,41 +12,39 @@ _options:
 
 {% include navigation.html active="our-frames" %}
 
-<div class="bg-no-repeat bg-right-bottom"
-	style="background-image: url('{{ layout.background_image_path }}');">
-	<div class="flex flex-wrap overflow-hidden container mx-auto xl:py-48 lg:py-32 xl:p0 lg:px-5">
-		<div class="overflow-hidden w-2/5">
+<div class="xl:frame-background bg-no-repeat bg-right-top mt-12 md:mt-20 lg:mt-32 xl:mt-48">
+	<div class="flex flex-wrap overflow-hidden container mx-auto px-2 md:pr-0 md:mr-0 xl:px-0">
+		<div class="w-full sm:w-5/12 xl:w-2/5 overflow-hidden pb-12 md:pb-20 lg:pb-32 xl:pb-48">
 			<h2 class="editable text-4xl font-serif">Our Frames</h2>
 			<p class="editable font-sans font-light">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis
-				ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-				Pharetra Vestibulum Nibh Commodo Ullamcorper.
+				Our talented team make traditional fine art frames, using our collection of unique hand-carved antique moulds. We also restore traditional frames to give them a new lease of life. 
 			</p>
 		</div>
+		<div class="hidden sm:block xl:hidden frame-background block w-6/12 ml-auto"></div>
 	</div>
 </div>
 
 <nav id="frames" class="border-t border-dark">
-	<ul class="flex py-3 px-6">
-		<li class="mr-6">
+	<ul class="flex flex-wrap md:flex-no-wrap py-3 px-2">
+		<li class="w-full md:w-auto mr-6 mb-4 md:mb-0">
 			<a
 				class="uppercase hover:underline font-sans text-sm {% if page.permalink == "/our-frames/" %}underline text-dark{% endif %}"
-				href="/our-frames"
-			>All</a>
+				href="/our-frames#frames"
+			>All Frames</a>
 		</li>
-		<li class="mr-6">
+		<li class="w-full md:w-auto mr-6 mb-4 md:mb-0">
 			<a
 				class="uppercase hover:underline font-sans text-sm {% if page.permalink == "/our-frames/antique-frames/" %}underline text-dark{% endif %}"
 				href="/our-frames/antique-frames#frames"
-			>Antique Frames</a>
+			>Antique Style Frames</a>
 		</li>
-		<li class="mr-6">
+		<li class="w-full md:w-auto mr-6 mb-4 md:mb-0">
 			<a 
 				class="uppercase hover:underline font-sans text-sm {% if page.permalink == "/our-frames/contemporary-frames/" %}underline text-dark{% endif %}"
 				href="/our-frames/contemporary-frames#frames"
-			>Contemporary Frames</a>
+			>Contemporary Style Frames</a>
 		</li>
-		<li class="mr-6">
+		<li class="w-full md:w-auto mr-6">
 			<a 
 				class="uppercase hover:underline font-sans text-sm {% if page.permalink == "/our-frames/frame-restorations/" %}underline text-dark{% endif %}"
 				href="/our-frames/frame-restorations#frames"

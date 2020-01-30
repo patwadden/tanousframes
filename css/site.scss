@@ -1,6 +1,10 @@
 ---
 ---
 /* Write your styles below this line. */
+p {
+	margin-bottom: 1rem;
+}
+
 .font-sans {
 	font-family: "Gill Sans";
 }
@@ -10,6 +14,30 @@
 }
 
 /* Backgrounds */
+/* 
+.sm\:bg-none { @media (min-width: 640px) { background-image: none !important; }}
+.md\:bg-none { @media (min-width: 768px) { background-image: none !important; }}
+.lg\:bg-none { @media (min-width: 1024px) { background-image: none !important; }}
+.xl\:bg-none { @media (min-width: 1280px) { background-image: none !important; }}
+.bg-none { background-image: none !important; } 
+*/
+
+.xl\:frame-background {
+	background-image: none;
+
+	@media (min-width: 1280px) {
+		background-image: url('/uploads/home/our-frames.png');
+	}
+}
+
+.frame-background {
+	background-image: url('/uploads/home/our-frames.png');
+
+	@media (min-width: 1280px) {
+		background-image: none;
+	}
+}
+
 .bg-light,
 .hover\:bg-light:hover {
 	background-color: #F6F2E8;

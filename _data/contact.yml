@@ -1,5 +1,7 @@
 email: test@test.com
-phone: +61 412 566 385
+phone_markdown: |
+  +61 412 566 385  
+  +61 412 566 385
 address_markdown: |
   Tanous Fine Art Frames Limited  
   7 Lillie Yard  

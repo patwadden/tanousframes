@@ -1,15 +1,15 @@
-<footer class="bg-charcoal xl:p0 lg:px-5">
+<footer class="bg-charcoal xl:p0 lg:px-5 px-5 lg:px-0">
 	<div class="flex flex-wrap overflow-hidden container mx-auto py-12">
-		<div class="flex w-1/4 overflow-hidden">
-			<img src="/css/images/guild.jpg" alt="" />
-			<p class="text-white font-sans font-light ml-8">
+		<div class="flex w-full lg:w-1/4 overflow-hidden mb-10">
+			<img class="w-48 " src="/css/images/guild.jpg" alt="" />
+			<p class="text-white font-sans font-light ml-4">
 				Tanous Fine Art Frames is a recognised member of the Fine Art Trade Guild.
 			</p>
 		</div>
-		<div class="ml-auto w-1/6 overflow-hidden font-sans text-white font-light text-right">{{ site.data.contact.address_markdown | markdownify }}</div>
-		<div class="w-1/6 overflow-hidden font-sans text-white font-light text-right">
+		<div class="ml-auto w-full lg:w-1/6 overflow-hidden font-sans text-white font-light text-right">{{ site.data.contact.address_markdown | markdownify }}</div>
+		<div class="w-full lg:w-1/6 overflow-hidden font-sans text-white font-light text-right">
 			<a href="mailto:{{ site.data.contact.email }}" class="hover:underline">{{ site.data.contact.email }}</a><br />
-			{{ site.data.contact.phone }}
+			{{ site.data.contact.phone_markdown | markdownify }}
 		</div>
 	</div>
 </footer>
