@@ -1,7 +1,7 @@
 ---
 layout: frame
 name: Picasso (2) style
-description: Black and Gold Leaf
+description: Gold Leaf and black
 tags:
 image_path: /uploads/antique/frame-2.jpg
 reference:
