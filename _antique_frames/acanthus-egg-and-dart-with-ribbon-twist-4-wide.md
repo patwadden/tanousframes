@@ -1,6 +1,6 @@
 ---
 layout: frame
-name: Acanthus egg and dart with ribbon twist    (4" wide)
+name: T 1. Acanthus egg and dart with ribbon twist    (4" wide)
 description:
 tags:
 image_path: /uploads/antique/frame-63.jpg
