@@ -1,6 +1,6 @@
 ---
 layout: frame
-name: Degas style    (2" wide)
+name: E 1. Degas style    (2" wide)
 description:
 tags:
 image_path: /uploads/contemporary/frame-146.jpg
