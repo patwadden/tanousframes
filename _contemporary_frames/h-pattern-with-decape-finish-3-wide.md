@@ -1,6 +1,6 @@
 ---
 layout: frame
-name: '''H''  Pattern with decape finish     (3" wide)'
+name: E 2.  'H'  Pattern with decape finish     (3" wide)
 description:
 tags:
 image_path: /uploads/contemporary/frame-148.jpg
