@@ -1,6 +1,6 @@
 ---
 layout: frame
-name: Barbizon style
+name: T 6.  Barbizon style
 description: 7cm - Decape metal leaf
 tags:
 image_path: /uploads/antique/frame-25.jpg
