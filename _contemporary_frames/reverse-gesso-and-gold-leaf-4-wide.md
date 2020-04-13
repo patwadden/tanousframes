@@ -1,6 +1,6 @@
 ---
 layout: frame
-name: Reverse gesso and gold leaf    (4" wide)
+name: E 4.  Reverse gesso and gold leaf    (4" wide)
 description:
 tags:
 image_path: /uploads/contemporary/frame-75.jpg
