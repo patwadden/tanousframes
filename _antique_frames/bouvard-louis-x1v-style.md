@@ -1,6 +1,6 @@
 ---
 layout: frame
-name: Bouvard (Louis X1V) style
+name: T 8.   Bouvard (Louis X1V) style
 description: Metal Leaf
 tags:
 image_path: /uploads/antique/frame-12.jpg
