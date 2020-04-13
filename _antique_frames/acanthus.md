@@ -1,6 +1,6 @@
 ---
 layout: frame
-name: Acanthus
+name: T 3. Acanthus
 description: 15cm Metal leaf
 tags:
 image_path: /uploads/antique/frame-34.jpg
