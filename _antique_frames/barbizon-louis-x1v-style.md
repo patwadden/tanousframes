@@ -1,6 +1,6 @@
 ---
 layout: frame
-name: Barbizon (Louis X1V) style
+name: T 5.  Barbizon (Louis X1V) style
 description: 9cm Metal Leaf
 tags:
 image_path: /uploads/antique/frame-14.jpg
