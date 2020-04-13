@@ -1,6 +1,6 @@
 ---
 layout: frame
-name: 'Acanthus leaf, ribbon twist and pearl beading (4" wide)'
+name: 'T 2. Acanthus leaf, ribbon twist and pearl beading (4" wide)'
 description:
 tags:
 image_path: /uploads/antique/frame-55.jpg
