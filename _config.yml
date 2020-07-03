@@ -16,9 +16,9 @@
 title: Tanous Fine Art Frames
 email: hello@tanousframes.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  We make and restore traditional fine art frames using our unique collection of hand-carved, antique moulds. 
+  The Tanous family have been in the trade for over a century, and the team continue to use the same skills 
+  that have been handed down in the family for the last century.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
