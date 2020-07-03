@@ -7,10 +7,10 @@
 			</p>
 		</div>
 
-		<div class="w-full lg:w-1/5 overflow-hidden font-sans text-white font-light text-right">
+		<div class="ml-auto w-full lg:w-1/5 overflow-hidden font-sans text-white font-light text-right">
 			<a href="mailto:{{ site.data.contact.email }}" class="hover:underline">{{ site.data.contact.email }}</a><br />
 			{{ site.data.contact.phone_markdown | markdownify }}
 		</div>
-	    <div class="ml-auto w-full lg:w-1/5 overflow-hidden font-sans text-white font-light text-right">{{ site.data.contact.address_markdown | markdownify }}</div>
+	    <div class="w-full lg:w-1/5 overflow-hidden font-sans text-white font-light text-right">{{ site.data.contact.address_markdown | markdownify }}</div>
 	</div>
 </footer>
