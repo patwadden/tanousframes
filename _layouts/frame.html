@@ -33,9 +33,11 @@ layout: default
         {% endfor %}
         <p class="font-sans font-light mt-8">{{ page.description }}</p>
       </div>
-      <div class="mt-auto text-right font-sans text-lg">
-        Ref {{ page.reference }}
-      </div>
+      {% if page.reference %}
+        <div class="mt-auto text-right font-sans text-lg">
+            Ref {{ page.reference }}
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>
