@@ -1,0 +1,4 @@
+index.html /
+about.html /
+frames.html /our-frames
+contact.html /contact
