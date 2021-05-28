@@ -38,25 +38,76 @@
 </head>
 
 <body class="antialiased">
-  <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+  <nav class="bg-light py-2 px-2 md:px-0">
+  <div class="flex flex-wrap overflow-hidden container mx-auto flex items-center justify-between flex-wrap xl:p0 lg:px-5">
+    <a href="/" class="flex items-center flex-shrink-0 text-white mr-4 md:mr-6">
+      <img src="/css/images/logo.png?_cchid=7d94fb356922fe6c54a562455e0b73bb" class="w-20 md:w-24" alt="" data-cms-original-src="/css/images/logo.png" />
+    </a>
+    <div class="block flex-grow flex items-center w-auto">
+      <div class="text-sm flex-grow">
+        <a href="/" class="text-xs md:text-base uppercase inline-block font-sans font-semibold hover:underline mt-0 mr-2 md:mr-4 ">
+          Home
+        </a>
+        <a href="/our-frames/" class="text-xs md:text-base uppercase inline-block font-sans font-semibold hover:underline mt-0 mr-2 md:mr-4 ">
+          Our Frames
+        </a>
+        <a href="/contact/" class="text-xs md:text-base uppercase inline-block font-sans font-semibold hover:underline mt-0underline text-dark cc-active">
+          Contact
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
 
-<div class="container">
-  <h1>404</h1>
+<div class="container mx-auto mt-0 mb-10 md:mt-16 md:mb-20 lg:mt-24 lg:mb-32 xl:mt-32 xl:mb-48">
+	<div class="flex flex-wrap overflow-hidden">
+		<div class="hidden md:block md:w-6/12 lg:w-6/12 xl:w-7/12 mb-4 md:my-2 px-2 overflow-hidden">
+			<img class="editable max-w-full h-auto" alt="" width="800" src="/uploads/photo-2020-07-05-01-42-51.jpg?_cchid=044cab7e77f9f249cad70576d8666065" data-cms-source="/contact.html" data-cms-index="0" data-cms-original-src="/uploads/photo-2020-07-05-01-42-51.jpg" />
+		</div>
+		<div class="hidden lg:block md:w-1/12 xl:w-1/12"></div>
+		<div class="w-full md:w-6/12 lg:w-4/12 xl:w-3/12 flex flex-col my-2 px-2 overflow-hidden">
+			<div>
+				<h1 class="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight mb-2 mt-4 md:mt-0">Contact Us</h1>
+			</div>
+			<form>
+				<div class="mb-4">
+					<label class="font-sans font-semibold mb-1 inline-block">Your Name</label>
+					<input type="text" name="name" class="border-dark border border-solid block placeholder-dark font-sans w-full py-2 px-3 mb-4" placeholder="Jane Doe" />
+				</div>
+				<div class="mb-4">
+					<label class="font-sans font-semibold mb-1 inline-block">Your Email Address</label>
+					<input type="email" name="email" class="border-dark border border-solid block placeholder-dark font-sans w-full py-2 px-3 mb-4" placeholder="jane.doe@example.net" />
+				</div>
+				<div class="mb-2">
+					<label class="font-sans font-semibold mb-1 inline-block">Your Message</label>
+					<textarea name="message" class="border-dark border border-solid block placeholder-dark font-sans w-full py-2 px-3" rows="5" placeholder="Jane Doe">
+					</textarea>
+				</div>
+				<button class="float-right inline-block mt-5 bg-light hover:bg-dark text-black py-3 px-12 font-sans transition w-full">
+					Send
+				</button>
+			</form>
+		</div>
+	</div>
+</div>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="container mx-auto mt-0 mb-10 md:mt-16 md:mb-20 lg:mt-24 lg:mb-32 xl:mt-32 xl:mb-48">
+	<div class="flex flex-wrap overflow-hidden">
+		<div class="my-2 px-2 w-full md:w-4/12 lg:w-3/12 font-sans">
+			<p class="mb-2">Tel: </p><p>+44 (0) 20 7385 9930<br />+44 (0) 7831 274052</p>
+<p></p>
+			<p class="mb-2">
+				Email: <a class="hover:underline" href="mailto:thetanous.family@btinternet.com">thetanous.family@btinternet.com</a>
+			</p>
+			<p class="mb-2"></p><p>Tanous Fine Art Frames Limited<br />7 Lillie Yard<br />Fulham<br />London<br />SW6 1UB</p>
+<p></p>
+		</div>
+		<div class="my-2 px-2 w-full md:w-8/12 lg:w-9/12">
+			<div class="relative block w-full p-0 overflow-hidden embed">
+				<iframe class="absolute top-0 bottom-0 left-0 w-full h-full border-0 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.4292737191704!2d-0.19866468402589235!3d51.48698952001609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760f8e514ff8b9%3A0xdf54631983d02848!2stanous%20fine%20art%20frames%20limited!5e0!3m2!1sen!2sau!4v1579759322159!5m2!1sen!2sau" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
 </div>
 
   <footer class="bg-charcoal xl:p0 lg:px-5 px-5 lg:px-0">

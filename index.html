@@ -1,21 +1,48 @@
----
-layout: default
-permalink: /
-background_image_path: /uploads/home/hero.jpg
-_options:
-  layout:
-    hidden: true
-  permalink:
-    hidden: true
-  image_path:
-    uploads_dir: /uploads/home
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="h-screen flex flex-col justify-center bg-cover bg-top bg-no-repeat" style="background-image: url('{{ page.background_image_path }}')">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png?_cchid=5327988cc4a9c76a5d38ced05780edc5" data-cms-original-href="/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png?_cchid=b4607f971489e0d0745819890188a75d" data-cms-original-href="/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png?_cchid=c792530210993cbb68b29651f1060a72" data-cms-original-href="/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png?_cchid=2d403f4d4c6a71d29673b7afbc48c1ab" data-cms-original-href="/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png?_cchid=fb929b05612164ccde54ca5154c00a9d" data-cms-original-href="/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png?_cchid=9f87170df6d2f1847db358246b02a857" data-cms-original-href="/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png?_cchid=5da8522226d9a2c40c55479650827fa4" data-cms-original-href="/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png?_cchid=3dfcff65e62b74b5277fe095b77e1b6c" data-cms-original-href="/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png?_cchid=0267dc22ddbc17569620a7dcda0b1595" data-cms-original-href="/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png?_cchid=12aaee9ceaec6503ff1f67ee1c18bb7a" data-cms-original-href="/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?_cchid=8380885d6536fd52362edc751f4f786e" data-cms-original-href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png?_cchid=3c011fc615c1ee3b317ddc3f0ccdc1c1" data-cms-original-href="/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?_cchid=1f54c94cd658601e260fcd8291881bf0" data-cms-original-href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/manifest.json?_cchid=b58fcfa7628c9205cb11a1b2c3e8f99a" data-cms-original-href="/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <title>Tanous Fine Art Frames</title>
+    <meta name="description" content="We make and restore traditional fine art frames using our unique collection of hand-carved, antique moulds. The Tanous family have been in the trade for over..." />
+    
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/site.css?_cchid=24d519ddd12c1c97594f6febd1411e25" data-cms-original-href="/css/site.css" />
+    
+    <script src="/js/scripts.js?_cchid=511dea0f2a636722ec71e603c6a828a5" data-cms-original-src="/js/scripts.js"></script>
+    
+    
+    
+    
+</head>
+
+<body class="antialiased">
+  <div class="h-screen flex flex-col justify-center bg-cover bg-top bg-no-repeat" style="background-image: url(/uploads/home/hero.jpg?_cchid=b188af2e524554da05d6ab2bf5c11987)" data-cms-original-style="background-image: url('/uploads/home/hero.jpg')">
 	<div class="container mx-auto">
 		<div class="flex justify-center mb-8">
 			<div class="w-2/3 lg:w-1/4">
-				<img src="/css/images/logo.png" class="min-w-64 max-w-full h-auto" alt="Tanous Fine Art Frames" />
+				<img src="/css/images/logo.png?_cchid=7d94fb356922fe6c54a562455e0b73bb" class="min-w-64 max-w-full h-auto" alt="Tanous Fine Art Frames" data-cms-original-src="/css/images/logo.png" />
 			</div>
 		</div>
 		<nav class="flex justify-center">
@@ -32,65 +59,88 @@ _options:
 	</div>
 </div>
 
-{% include navigation.html active="home" %}
+<nav class="bg-light py-2 px-2 md:px-0">
+  <div class="flex flex-wrap overflow-hidden container mx-auto flex items-center justify-between flex-wrap xl:p0 lg:px-5">
+    <a href="/" class="flex items-center flex-shrink-0 text-white mr-4 md:mr-6 cc-active">
+      <img src="/css/images/logo.png?_cchid=7d94fb356922fe6c54a562455e0b73bb" class="w-20 md:w-24" alt="" data-cms-original-src="/css/images/logo.png" />
+    </a>
+    <div class="block flex-grow flex items-center w-auto">
+      <div class="text-sm flex-grow">
+        <a href="/" class="text-xs md:text-base uppercase inline-block font-sans font-semibold hover:underline mt-0 mr-2 md:mr-4 underline text-dark cc-active">
+          Home
+        </a>
+        <a href="/our-frames/" class="text-xs md:text-base uppercase inline-block font-sans font-semibold hover:underline mt-0 mr-2 md:mr-4 ">
+          Our Frames
+        </a>
+        <a href="/contact/" class="text-xs md:text-base uppercase inline-block font-sans font-semibold hover:underline mt-0">
+          Contact
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
  
 <div class="flex flex-wrap overflow-hidden container mx-auto my-0 md:my-20 lg:my-32 xl:my-48">
 	<div class="w-full md:w-1/2 my-2 px-2 overflow-hidden">
-		<img class="editable max-w-full h-auto" alt="" src="/uploads/tanous-101.jpg" width="800" srcset="/uploads/tanous-101.jpg 800w, /uploads/tanous-101@2x.jpg 1600w" />
+		<img class="editable max-w-full h-auto" alt="" src="/uploads/tanous-101.jpg?_cchid=18e0e8d85f6b1899361517c5e103be7b" width="800" srcset="/uploads/tanous-101.jpg?_cchid=18e0e8d85f6b1899361517c5e103be7b 800w, /uploads/tanous-101@2x.jpg?_cchid=ca9691c9b54113ba013e3b3eb1a10729 1600w" data-cms-source="/index.html" data-cms-index="0" data-cms-original-src="/uploads/tanous-101.jpg" data-cms-original-srcset="/uploads/tanous-101.jpg 800w, /uploads/tanous-101@2x.jpg 1600w" />
 	</div>
 
 	<div class="w-full md:w-1/2 my-2 px-2">
-		<img class="hidden md:block editable border-solid border-8 border-white w-4/5 mt-10 -ml-20 lg:-ml-40 xl:mb-5 md:mb-1" alt="" src="/uploads/hero.jpg" width="600" />
-		<h2 class="editable text-3xl md:text-4xl lg:text-5xl leading-tight font-serif">
+		<img class="hidden md:block editable border-solid border-8 border-white w-4/5 mt-10 -ml-20 lg:-ml-40 xl:mb-5 md:mb-1" alt="" src="/uploads/hero.jpg?_cchid=02c8822d966bf967c2ddf15338405cf6" width="600" data-cms-source="/index.html" data-cms-index="1" data-cms-original-src="/uploads/hero.jpg" />
+		<h2 class="editable text-3xl md:text-4xl lg:text-5xl leading-tight font-serif" data-cms-source="/index.html" data-cms-index="2">
 		    Family Owned For Over a Century
 		</h2>
-		<span class="editable font-sans font-light block">
+		<span class="editable font-sans font-light block" data-cms-source="/index.html" data-cms-index="3">
 			<p>
 				The Tanous family have been in the framing business since 1905. We use the same skills and techniques that have been handed down in the family.
 			</p>
 			<p>
-				Over the past century we have been commissioned by artists of the eminence of Jacob Epstein, Augustus John, Nadia Benois, Sir Alfred Munnings and Vivian Pitchforth.
-			</p>
+				Over the past century we have been commissioned by artists of the eminence of Jacob Epstein, Augustus John, Nadia Benois, Sir Alfred Munnings and Vivian Pitchforth.&nbsp;</p>
 		</span>
-		<!-- {% include button.html href="#" label="Read Our Story" %} -->
+		<!-- <a href="#"
+  class="inline-block bg-light hover:bg-dark text-black py-2 px-4 lg:py-3 lg:px-8 font-sans transition ">
+  Read Our Story
+</a> -->
 	</div>
 </div>
 
 <div class="flex flex-wrap flex-col overflow-hidden mt-40 mb-0 md:my-20 lg:my-32 xl:my-48 container mx-auto items-center">
 	<h2 class="text-3xl md:text-4xl lg:text-5xl leading-tight text-center font-serif">Our Frames</h2>
-	<p class="editable w-full md:w-4/5 lg:w-3/5 xl:w-2/5 px-2 md:px-0 mb-12 text-center font-sans font-light">
+	<p class="editable w-full md:w-4/5 lg:w-3/5 xl:w-2/5 px-2 md:px-0 mb-12 text-center font-sans font-light" data-cms-source="/index.html" data-cms-index="4">
 	    We make and restore traditional fine art frames using our unique collection of hand-carved, antique moulds. The Tanous family have been in the trade for over a century, and the team continue to use the same skills that have been handed down in the family for the last century.
 	</p>
 
 	<div class="flex flex-wrap flex-row overflow-hidden justify-center container mx-auto mb-5">
-		<button data-target="antique" class="editable text-sm md:text-base toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark text-dark hover:text-white mr-2 sm:mr-4 uppercase font-sans">Antique</button>
-		<button data-target="contemporary" class="editable text-sm md:text-base toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark hover:text-white mx-2 sm:mx-4 uppercase font-sans">Modern &amp; Contemporary</button>
-		<button data-target="restorations" class="editable text-sm md:text-base toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark hover:text-white ml-2 sm:ml-4 uppercase font-sans">Restorations</button>
+		<button data-target="antique" class="editable text-sm md:text-base toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark text-dark hover:text-white mr-2 sm:mr-4 uppercase font-sans" data-cms-source="/index.html" data-cms-index="5">Antique</button>
+		<button data-target="contemporary" class="editable text-sm md:text-base toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark hover:text-white mx-2 sm:mx-4 uppercase font-sans" data-cms-source="/index.html" data-cms-index="6">Modern &amp; Contemporary</button>
+		<button data-target="restorations" class="editable text-sm md:text-base toggle cursor-pointer block lg:inline-block lg:mt-0 hover:text-dark hover:text-white ml-2 sm:ml-4 uppercase font-sans" data-cms-source="/index.html" data-cms-index="7">Restorations</button>
 	</div>
 
 	<div class="container mx-auto p-6 md:p-12 bg-light">
 		<div class="target" id="antique">
 			<div class="flex flex-wrap flex-row overflow-hidden">
 				<div class="w-full sm:w-1/2 md:w-1/3 my-px px-px">
-					<img class="editable" alt="" src="/uploads/frame-143.jpg" width="400" srcset="/uploads/frame-143.jpg 400w, /uploads/frame-143@2x.jpg 800w" />
+					<img class="editable" alt="" src="/uploads/frame-143.jpg?_cchid=3cb6101afc423603231fe29f893c8691" width="400" srcset="/uploads/frame-143.jpg?_cchid=3cb6101afc423603231fe29f893c8691 400w, /uploads/frame-143@2x.jpg?_cchid=07c493a4d08d7321865534fb53ad049f 800w" data-cms-source="/index.html" data-cms-index="8" data-cms-original-src="/uploads/frame-143.jpg" data-cms-original-srcset="/uploads/frame-143.jpg 400w, /uploads/frame-143@2x.jpg 800w" />
 				</div>
 				<div class="hidden sm:block sm:w-1/2 md:w-1/3 my-px px-px ">
-					<img class="editable" alt="" src="/uploads/frame-3.jpg" width="500" />
+					<img class="editable" alt="" src="/uploads/frame-3.jpg?_cchid=d552fdab7d34df967e8507e4b754f2b2" width="500" data-cms-source="/index.html" data-cms-index="9" data-cms-original-src="/uploads/frame-3.jpg" />
 				</div>
 				<div class="hidden md:block my-px px-px w-1/3">
-					<img class="editable" alt="" src="/uploads/frame-109.jpg" width="900" />
+					<img class="editable" alt="" src="/uploads/frame-109.jpg?_cchid=48f9b37a53daabe4c119800b6ce8dce5" width="900" data-cms-source="/index.html" data-cms-index="10" data-cms-original-src="/uploads/frame-109.jpg" />
 				</div>
 			</div>
 
 			<div class="flex flex-wrap flex-row justify-center lg:-mt-20">
 				<div class="flex flex-wrap flex-row justify-center bg-white shadow-2xl p-4 md:p-10 xl:w-1/2 lg:w-2/3">
-					<h3 class="editable text-2xl md:text-3xl leading-tight mb-2 font-serif text-center">
+					<h3 class="editable text-2xl md:text-3xl leading-tight mb-2 font-serif text-center" data-cms-source="/index.html" data-cms-index="11">
 					    Antique Style Frames
 					</h3>
-					<p class="editable text-center font-sans font-light">
+					<p class="editable text-center font-sans font-light" data-cms-source="/index.html" data-cms-index="12">
 					    We use a unique collection of hand-carved, antique moulds to create beautiful antique style frames.&nbsp;
 					</p>
-					{% include button.html href="/our-frames/antique-frames" label="See More Frames" %}
+					<a href="/our-frames/antique-frames" class="inline-block bg-light hover:bg-dark text-black py-2 px-4 lg:py-3 lg:px-8 font-sans transition ">
+  See More Frames
+</a>
 				</div>
 			</div>
 		</div>
@@ -98,25 +148,27 @@ _options:
 		<div class="target hidden" id="contemporary">
 			<div class="flex flex-wrap flex-row overflow-hidden">
 				<div class="w-full sm:w-1/2 md:w-1/3 my-px px-px">
-					<img class="editable" alt="" src="/uploads/frame-145.jpg" width="400" srcset="/uploads/frame-145.jpg 400w, /uploads/frame-145@2x.jpg 800w" />
+					<img class="editable" alt="" src="/uploads/frame-145.jpg?_cchid=0abf720e7368bbc6e1da4700cf8f6ba9" width="400" srcset="/uploads/frame-145.jpg?_cchid=0abf720e7368bbc6e1da4700cf8f6ba9 400w, /uploads/frame-145@2x.jpg?_cchid=ac1ecdba16946f047e1715b7c6e2f13e 800w" data-cms-source="/index.html" data-cms-index="13" data-cms-original-src="/uploads/frame-145.jpg" data-cms-original-srcset="/uploads/frame-145.jpg 400w, /uploads/frame-145@2x.jpg 800w" />
 				</div>
 				<div class="hidden sm:block sm:w-1/2 md:w-1/3 my-px px-px ">
-					<img class="editable" alt="" src="/uploads/frame-69.jpg" width="500" />
+					<img class="editable" alt="" src="/uploads/frame-69.jpg?_cchid=d751d6277f1e08312707a3e0727dffcd" width="500" data-cms-source="/index.html" data-cms-index="14" data-cms-original-src="/uploads/frame-69.jpg" />
 				</div>
 				<div class="hidden md:block my-px px-px w-1/3">
-					<img class="editable" alt="" src="/uploads/frame-147.jpg" width="900" />
+					<img class="editable" alt="" src="/uploads/frame-147.jpg?_cchid=b17493c4e14100e72c19106a6572043b" width="900" data-cms-source="/index.html" data-cms-index="15" data-cms-original-src="/uploads/frame-147.jpg" />
 				</div>
 			</div>
 
 			<div class="flex flex-wrap flex-row justify-center lg:-mt-20">
 				<div class="flex flex-wrap flex-row justify-center bg-white shadow-2xl p-4 md:p-10 xl:w-1/2 lg:w-2/3">
-					<h3 class="editable text-2xl md:text-3xl leading-tight mb-2 font-serif text-center">
+					<h3 class="editable text-2xl md:text-3xl leading-tight mb-2 font-serif text-center" data-cms-source="/index.html" data-cms-index="16">
 					    Modern &amp; Contemporary Frames
 					</h3>
-					<p class="editable text-center font-sans font-light">
+					<p class="editable text-center font-sans font-light" data-cms-source="/index.html" data-cms-index="17">
 					    Our modern and contemporary style frames can be finished using a variety of methods, from painted to gilded and everything in between.
 					</p>
-					{% include button.html href="/our-frames/contemporary-frames" label="See More Frames" %}
+					<a href="/our-frames/contemporary-frames" class="inline-block bg-light hover:bg-dark text-black py-2 px-4 lg:py-3 lg:px-8 font-sans transition ">
+  See More Frames
+</a>
 				</div>
 			</div>
 		</div>
@@ -124,27 +176,51 @@ _options:
 		<div class="target hidden" id="restorations">
 			<div class="flex flex-wrap flex-row overflow-hidden">
 				<div class="w-full sm:w-1/2 md:w-1/3 my-px px-px">
-					<img class="editable" alt="" width="400" src="/uploads/tanous-150.jpg" />
+					<img class="editable" alt="" width="400" src="/uploads/tanous-150.jpg?_cchid=92e1eed3a02bfc331646707d18fc3de8" data-cms-source="/index.html" data-cms-index="18" data-cms-original-src="/uploads/tanous-150.jpg" />
 				</div>
 				<div class="hidden sm:block sm:w-1/2 md:w-1/3 my-px px-px ">
-					<img class="editable" alt="" src="/uploads/tanous-99.jpg" width="400" srcset="/uploads/tanous-99.jpg 400w, /uploads/tanous-99@2x.jpg 800w" />
+					<img class="editable" alt="" src="/uploads/tanous-99.jpg?_cchid=fef7c5bb4676bea6aec7e9e72fad53ab" width="400" srcset="/uploads/tanous-99.jpg?_cchid=fef7c5bb4676bea6aec7e9e72fad53ab 400w, /uploads/tanous-99@2x.jpg?_cchid=2d4f73a9020b07475fad37a2333aef6a 800w" data-cms-source="/index.html" data-cms-index="19" data-cms-original-src="/uploads/tanous-99.jpg" data-cms-original-srcset="/uploads/tanous-99.jpg 400w, /uploads/tanous-99@2x.jpg 800w" />
 				</div>
 				<div class="hidden md:block my-px px-px w-1/3">
-					<img class="editable" alt="" width="500" src="/uploads/tanous-149.jpg" />
+					<img class="editable" alt="" width="500" src="/uploads/tanous-149.jpg?_cchid=afd13db79932fea7f3af5aa5e8200ab0" data-cms-source="/index.html" data-cms-index="20" data-cms-original-src="/uploads/tanous-149.jpg" />
 				</div>
 			</div>
 
 			<div class="flex flex-wrap flex-row justify-center lg:-mt-20">
 				<div class="flex flex-wrap flex-row justify-center bg-white shadow-2xl p-4 md:p-10 xl:w-1/2 lg:w-2/3">
-					<h3 class="editable text-2xl md:text-3xl leading-tight mb-2 font-serif text-center">
+					<h3 class="editable text-2xl md:text-3xl leading-tight mb-2 font-serif text-center" data-cms-source="/index.html" data-cms-index="21">
 					    Frame Restorations
 					</h3>
-					<p class="editable text-center font-sans font-light">
+					<p class="editable text-center font-sans font-light" data-cms-source="/index.html" data-cms-index="22">
 					    We strive to restore frames to their original condition and offer a wide variety of restoration services. Some of which include ornament repair, gilding, cleaning<br />and stabilisation.
 					</p>
-					{% include button.html href="/our-frames" label="See More Frames" %}
+					<a href="/our-frames" class="inline-block bg-light hover:bg-dark text-black py-2 px-4 lg:py-3 lg:px-8 font-sans transition ">
+  See More Frames
+</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+  <footer class="bg-charcoal xl:p0 lg:px-5 px-5 lg:px-0">
+	<div class="flex flex-wrap overflow-hidden container mx-auto py-12">
+		<div class="flex w-full lg:w-1/4 overflow-hidden mb-10">
+			<img class="w-48 " src="/css/images/guild.jpg?_cchid=659a4161ca613c3ebc1b847f3e8067e9" alt="" data-cms-original-src="/css/images/guild.jpg" />
+			<p class="text-white font-sans font-light ml-4">
+				Tanous Fine Art Frames is a recognised member of the Fine Art Trade Guild.
+			</p>
+		</div>
+
+		<div class="ml-auto w-full lg:w-1/5 overflow-hidden font-sans text-white font-light text-right">
+			<a href="mailto:thetanous.family@btinternet.com" class="hover:underline">thetanous.family@btinternet.com</a><br />
+			<p>+44 (0) 20 7385 9930<br />+44 (0) 7831 274052</p>
+
+		</div>
+	    <div class="w-full lg:w-1/5 overflow-hidden font-sans text-white font-light text-right"><p>Tanous Fine Art Frames Limited<br />7 Lillie Yard<br />Fulham<br />London<br />SW6 1UB</p>
+</div>
+	</div>
+</footer>
+</body>
+
+</html>
